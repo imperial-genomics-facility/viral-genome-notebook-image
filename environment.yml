@@ -1,0 +1,36 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+  - anaconda
+dependencies:
+  - conda-forge:matplotlib=3.2.1
+  - conda-forge::seaborn
+  - conda-forge::cmake
+  - conda-forge::libgcc
+  - conda-forge::r-essentials
+  - conda-forge::r-rcpp
+  - conda-forge::r-devtools
+  - conda-forge::r-biocmanager
+  - bioconda::seqkit
+  - bioconda::gatk4
+  - bioconda::spades
+  - bioconda::mafft
+  - bioconda::raxml
+  - bioconda::clustalw
+  - bioconda::sra-tools
+  - bioconda::muscle
+  - bioconda::fasttree
+  - bioconda::figtree
+  - anaconda::pyqt
+  - bioconda::java-jdk=8
+  - bioconda::seqtk
+  - pip
+  - pip:
+    - rpy2
+    - requests
+    - plotly
+    - ete3
+    - jupyter_server_proxy
+    - nextstrain-augur
+    - kneaddata --install-option="--bypass-dependencies-install"
