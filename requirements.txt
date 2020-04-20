@@ -2,3 +2,4 @@ sphinx>=1.4
 ipykernel
 nbsphinx>=0.4
 nbclean
+sphinx_rtd_theme==0.4.3
