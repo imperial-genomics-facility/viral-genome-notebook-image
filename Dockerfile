@@ -37,6 +37,11 @@ RUN apt-get -y update && \
       openssh-client \
       libssl-dev \
       libgl1-mesa-glx \
+      libncurses5-dev \
+      libbz2-1.0 \
+      libbz2-dev \
+      liblzma5  \
+      liblzma-dev \
       git  && \
     curl -sL https://deb.nodesource.com/setup_13.x | bash - && \
     apt-get install -y nodejs && \
@@ -97,6 +102,22 @@ RUN mkdir -p /home/$NB_USER/bin && \
     cp minimap2-2.17_x64-linux/minimap2 /home/$NB_USER/bin/minimap2 && \
     rm -rf minimap2-2.17_x64-linux && \
     chmod a+x /home/$NB_USER/bin/minimap2 && \
+    wget -q -O /tmp/samtools-1.10.tar.bz2 https://github.com/samtools/samtools/releases/download/1.10/samtools-1.10.tar.bz2 && \
+    tar jxf /tmp/samtools-1.10.tar.bz2 && \
+    cd samtools-1.10/ && \
+    ./configure --prefix=/home/vmuser/bin/samtools && \
+    make && \
+    make install && \
+    cd - && \
+    rm -rf samtools-1.10 && \
+    wget -q -O /tmp/bcftools-1.10.2.tar.bz2 https://github.com/samtools/bcftools/releases/download/1.10.2/bcftools-1.10.2.tar.bz2 && \
+    tar jxf /tmp/bcftools-1.10.2.tar.bz2 && \
+    cd bcftools-1.10.2 && \
+    ./configure --prefix=/home/vmuser/bin/bcftools && \
+    make && \
+    make install && \
+    cd - && \
+    rm -rf bcftools-1.10.2 && \
     rm -rf ${TMPDIR} && \
     mkdir -p ${TMPDIR} && \
     mkdir -p /home/$NB_USER/.cache
@@ -109,6 +130,8 @@ ENV PATH /home/$NB_USER/bin/bbmap/:${PATH}
 ENV PATH /home/$NB_USER/bin/bowtie2-2.4.1-linux-x86_64/:${PATH}
 ENV PATH /home/$NB_USER/bin/mauve_snapshot_2015-02-13/linux-x64/:${PATH}
 ENV PATH /home/$NB_USER/bin/mafft-linux64/:${PATH}
+ENV PATH /home/$NB_USER/bin/samtools/bin/:${PATH}
+ENV PATH /home/$NB_USER/bin/bcftools/bin/:${PATH}
 EXPOSE 8888
 EXPOSE 4000
 CMD [ "notebook" ]
