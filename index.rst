@@ -3,4 +3,4 @@
 .. toctree::
    :maxdepth: 1
    
-   examples/corona_analysis_notebook_2
+   examples/coronavirus_analysis_build_consensus_fasta
