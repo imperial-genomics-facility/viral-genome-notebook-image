@@ -32,7 +32,7 @@ html_theme_options = {
     'navigation_depth': 4,
     'includehidden': True,
     'titles_only': False,
-    'conf_py_path':'/examples/',
+    'conf_py_path':'/',
 }
 
 # -- Strip output ----------------------------------------------
