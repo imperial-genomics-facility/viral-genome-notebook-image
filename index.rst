@@ -5,3 +5,4 @@
    
    examples/coronavirus_analysis_build_consensus_fasta
    examples/coronavirus_analysis_multiple_sequence_alignment_and_tree_building
+   examples/coronavirus_analysis_Tree_building_for_153_Coronavirus_%20genomes
