@@ -6,7 +6,7 @@
     :target: https://hub.docker.com/r/imperialgenomicsfacility/viral-genome-analysis-notebooks
     :alt: Docker pulls
     
-.. |dockerStars| image:: https://img.shields.io/docker/pulls/imperialgenomicsfacility/viral-genome-analysis-notebooks.svg 
+.. |dockerStars| image:: https://img.shields.io/docker/stars/imperialgenomicsfacility/viral-genome-analysis-notebooks.svg 
     :target: https://hub.docker.com/r/imperialgenomicsfacility/viral-genome-analysis-notebooks
     :alt: Docker Stars
 
