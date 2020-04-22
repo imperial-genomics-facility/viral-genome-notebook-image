@@ -94,9 +94,6 @@ RUN mkdir -p /home/$NB_USER/bin && \
     wget -q -O /tmp/mauve_linux_snapshot_2015-02-13.tar.gz http://darlinglab.org/mauve/snapshots/2015/2015-02-13/linux-x64/mauve_linux_snapshot_2015-02-13.tar.gz && \
     tar -zxf /tmp/mauve_linux_snapshot_2015-02-13.tar.gz && \
     mv mauve_snapshot_2015-02-13 /home/$NB_USER/bin/ && \
-    wget -q -O /tmp/mafft-7.450-linux.tgz https://mafft.cbrc.jp/alignment/software/mafft-7.450-linux.tgz && \
-    tar -zxf /tmp/mafft-7.450-linux.tgz && \
-    mv mafft-linux64 ~/bin/ && \
     wget -q -O /tmp/minimap2-2.17_x64-linux.tar.bz2 https://github.com/lh3/minimap2/releases/download/v2.17/minimap2-2.17_x64-linux.tar.bz2 && \
     tar -jxf /tmp/minimap2-2.17_x64-linux.tar.bz2 && \
     cp minimap2-2.17_x64-linux/minimap2 /home/$NB_USER/bin/minimap2 && \
@@ -129,8 +126,6 @@ ENV PATH /home/$NB_USER/bin/MEGAHIT-1.2.9-Linux-x86_64-static/bin/:${PATH}
 ENV PATH /home/$NB_USER/bin/bbmap/:${PATH}
 ENV PATH /home/$NB_USER/bin/bowtie2-2.4.1-linux-x86_64/:${PATH}
 ENV PATH /home/$NB_USER/bin/mauve_snapshot_2015-02-13/linux-x64/:${PATH}
-ENV PATH /home/$NB_USER/bin/mafft-linux64/:${PATH}
-ENV PATH /home/$NB_USER/bin/mafft-linux64/mafftdir/bin:${PATH}
 ENV PATH /home/$NB_USER/bin/samtools/bin/:${PATH}
 ENV PATH /home/$NB_USER/bin/bcftools/bin/:${PATH}
 EXPOSE 8888
