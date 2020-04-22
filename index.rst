@@ -1,5 +1,8 @@
 .. include:: README.rst
 
+List of example notebooks
+==========================
+
 .. toctree::
    :maxdepth: 1
    
