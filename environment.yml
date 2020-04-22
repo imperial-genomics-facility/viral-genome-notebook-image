@@ -17,6 +17,7 @@ dependencies:
   - bioconda::raxml
   - bioconda::clustalw
   - bioconda::sra-tools
+  - bioconda::mafft
   - bioconda::muscle
   - bioconda::fasttree
   - bioconda::figtree
