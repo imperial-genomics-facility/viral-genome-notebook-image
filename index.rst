@@ -1,5 +1,6 @@
 .. include:: README.rst
 
+
 .. |Coronavirus153Genomes| image:: https://mybinder.org/badge_logo.svg
     :target: https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/master?urlpath=lab%2Ftree%2F%2Fexamples%2Fcoronavirus_analysis_Tree_building_for_153_Coronavirus_genomes.ipynb
 
@@ -13,6 +14,8 @@
 
 .. |CoronavirusMSA| image:: https://mybinder.org/badge_logo.svg
    :target: https://mybinder.org/v2/gh/imperial-genomics-facility/viral-genome-notebook-image/master?urlpath=lab%2Ftree%2F%2Fexamples%2Fcoronavirus_analysis_multiple_sequence_alignment_and_tree_building.ipynb
+
+
 List of example notebooks
 ==========================
 
