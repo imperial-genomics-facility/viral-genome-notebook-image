@@ -130,6 +130,7 @@ ENV PATH /home/$NB_USER/bin/bbmap/:${PATH}
 ENV PATH /home/$NB_USER/bin/bowtie2-2.4.1-linux-x86_64/:${PATH}
 ENV PATH /home/$NB_USER/bin/mauve_snapshot_2015-02-13/linux-x64/:${PATH}
 ENV PATH /home/$NB_USER/bin/mafft-linux64/:${PATH}
+ENV PATH /home/$NB_USER/bin/mafft-linux64/mafftdir/bin:${PATH}
 ENV PATH /home/$NB_USER/bin/samtools/bin/:${PATH}
 ENV PATH /home/$NB_USER/bin/bcftools/bin/:${PATH}
 EXPOSE 8888
