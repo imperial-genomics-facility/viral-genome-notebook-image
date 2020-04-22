@@ -16,6 +16,6 @@
  
 Viral genome analysis notebooks
 --------------------------------
-| docs | dockerPulls | dockerStars | binderMain |
+|docs|dockerPulls|dockerStars|binderMain|
 
 A repo for keeping notebooks for viral genome analysis and data visualization
