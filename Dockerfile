@@ -8,6 +8,7 @@ USER root
 WORKDIR /
 RUN apt-get -y update && \
     apt-get install --no-install-recommends -y \
+      curlftpfs \
       libfontconfig1 \
       libxrender1 \
       libreadline6-dev \
