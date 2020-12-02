@@ -25,7 +25,6 @@ dependencies:
   - bioconda::seqtk
   - pip
   - pip:
-    - rpy2
     - requests
     - plotly
     - ete3
