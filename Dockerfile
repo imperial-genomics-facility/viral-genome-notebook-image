@@ -1,4 +1,4 @@
-FROM imperialgenomicsfacility/base-notebook-image:release-v0.0.3
+FROM imperialgenomicsfacility/base-notebook-image:release-v0.0.5
 LABEL maintainer="IGF"
 LABEL version="0.0.1"
 LABEL description="Docker image for running viral genome analysis"
@@ -65,13 +65,10 @@ RUN chown -R ${NB_UID} /home/$NB_USER/examples && \
     chown ${NB_UID} /home/$NB_USER/environment.yml
 USER $NB_USER
 WORKDIR /home/$NB_USER
-RUN . /home/$NB_USER/miniconda3/etc/profile.d/conda.sh && \
-    conda update -n base -c defaults conda && \
-    conda activate notebook-env && \
+RUN conda update -n base -c defaults conda && \
     conda env update -q -n notebook-env --file /home/$NB_USER/environment.yml && \
     jupyter labextension install @jupyterlab/fasta-extension && \
     jupyter labextension install jupyterlab-drawio && \
-    jupyter serverextension enable --sys-prefix jupyter_server_proxy && \
     conda clean -a -y && \
     rm -rf /home/$NB_USER/.cache && \
     rm -rf ${TMPDIR} && \
