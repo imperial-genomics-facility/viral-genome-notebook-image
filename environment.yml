@@ -6,19 +6,14 @@ channels:
 dependencies:
   - conda-forge::seaborn
   - conda-forge::cmake
-  - bioconda::spades
-  - bioconda::clustalw
   - bioconda::sra-tools
   - bioconda::mafft
   - bioconda::muscle
   - bioconda::fasttree
   - bioconda::figtree
   - anaconda::pyqt
-  - bioconda::seqtk
   - pip
   - pip:
     - requests
-    - plotly
     - ete3
     - nextstrain-augur
-    - kneaddata --install-option="--bypass-dependencies-install"
