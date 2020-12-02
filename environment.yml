@@ -8,7 +8,6 @@ dependencies:
   - conda-forge::cmake
   - conda-forge::libgcc
   - bioconda::spades
-  - bioconda::raxml
   - bioconda::clustalw
   - bioconda::sra-tools
   - bioconda::mafft
