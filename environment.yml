@@ -4,7 +4,7 @@ channels:
   - defaults
   - anaconda
 dependencies:
-  - conda-forge:matplotlib=3.2.1
+  - conda-forge:matplotlib
   - conda-forge::seaborn
   - conda-forge::cmake
   - conda-forge::libgcc
