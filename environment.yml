@@ -4,7 +4,6 @@ channels:
   - defaults
   - anaconda
 dependencies:
-  - conda-forge:matplotlib
   - conda-forge::seaborn
   - conda-forge::cmake
   - conda-forge::libgcc
@@ -30,6 +29,5 @@ dependencies:
     - requests
     - plotly
     - ete3
-    - jupyter_server_proxy
     - nextstrain-augur
     - kneaddata --install-option="--bypass-dependencies-install"
