@@ -6,7 +6,6 @@ channels:
 dependencies:
   - conda-forge::seaborn
   - conda-forge::cmake
-  - conda-forge::libgcc
   - bioconda::spades
   - bioconda::clustalw
   - bioconda::sra-tools
@@ -15,7 +14,6 @@ dependencies:
   - bioconda::fasttree
   - bioconda::figtree
   - anaconda::pyqt
-  - bioconda::java-jdk=8
   - bioconda::seqtk
   - pip
   - pip:
