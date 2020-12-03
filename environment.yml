@@ -2,7 +2,6 @@ channels:
   - conda-forge
   - bioconda
   - defaults
-  - anaconda
 dependencies:
   - conda-forge:matplotlib
   - conda-forge::seaborn
@@ -12,7 +11,6 @@ dependencies:
   - conda-forge::r-rcpp
   - conda-forge::r-devtools
   - conda-forge::r-biocmanager
-  - bioconda::gatk4
   - bioconda::spades
   - bioconda::raxml
   - bioconda::clustalw
@@ -25,10 +23,7 @@ dependencies:
   - bioconda::seqtk
   - pip
   - pip:
-    - rpy2
     - requests
-    - plotly
     - ete3
     - jupyter_server_proxy
     - nextstrain-augur
-    - kneaddata --install-option="--bypass-dependencies-install"
