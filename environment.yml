@@ -4,8 +4,6 @@ channels:
   - defaults
   - anaconda
 dependencies:
-  - conda-forge::seaborn
-  - conda-forge::cmake
   - bioconda::sra-tools
   - bioconda::mafft
   - bioconda::muscle
